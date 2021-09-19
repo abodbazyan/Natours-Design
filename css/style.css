@@ -1,3 +1,20 @@
+/*
+
+Media Query Manager (PX)
+0 - 600.............Phone
+600 - 900...........Tablet Portrait
+900 - 1200..........Tablet Landscape
+[1200 - 1800].......Is where our normal styles apply
+1800+...............Big Desktops
+
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desk
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,6 +52,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
